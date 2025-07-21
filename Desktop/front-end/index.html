@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>CHARGEX - Premium Sneakers</title>
+    <link rel="stylesheet" href="cs/styles.css" />
+</head>
+
+<body>
+    <header> 
+        <div class="logo">
+            <a href="index.html"></a>
+            <img src="images/logo-image.svg" alt="CHARGEX" class="logo-img" />
+        </div>
+
+        <h1 class="slogan">Ball. Style. Game.</h1>
+        <div class="header-right">
+            <div class="doughnut-menu">
+                <button class="doughnut-toggle" id="doughnut-toggle" aria-label="Toggle menu">
+                    <span class="doughnut-icon">☰</span>
+                </button>
+
+                <div class="doughnut-links">
+                    <a href="aboutus.html" id="aboutus-link">About Us</a>
+                    <a href="login.html" id="login-link">Log In</a>
+                    <a href="register.html" id="register-link">Register</a>
+                </div>
+            </div>  
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search sneakers..." />
+            <button>Search</button>
+        </div>
+        
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html" id="home-link">Home</a>
+        <a href="products.html" id="shop-link">Shop</a>
+        <a href="#" id="cart-link">Cart</a>
+    </nav>
+
+    <main>
+        <section class="hero" id="home-section">
+            <h2>STEP UP YOUR GAME WITH US</h2>
+            <p>Best Stop Shop Online</p>
+            <a href="products.html" id="shop-now" class="btn-primary" role="button">SHOP NOW</a>
+        </section>
+
+
+        <!-- ===== CART SIDEBAR ===== -->
+    <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" id="close-cart" aria-label="Close cart">
+          ×
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be added here dynamically -->
+      </div>
+      <div class="cart-total">
+        <p>Total: <span id="cart-total">₵0</span></p>
+        <button class="checkout-btn">CHECKOUT</button>
+      </div>
+    </aside>
+    <div class="cart-overlay" id="cart-overlay" tabindex="-1"></div>
+    <!-- ===== END CART SIDEBAR ===== -->
+
+
+    </main>
+
+    <!---about-section-->
+    <footer id="aboutus-link">
+        <div class="footer-content">
+            <h3><a href="aboutus.html">About CHARGE X</a></h3>
+            <p>We provide premium sneakers for athletes and sneaker enthusiasts across Ghana.</p>
+            <p>You can reach us on +233555313037 / +233541929907.</p>
+        </div>
+        <p class="copyright">© 2025 CHARGE X INC. All Rights Reserved.</p>
+    </footer>
+
+     
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+

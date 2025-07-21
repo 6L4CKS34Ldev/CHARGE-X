@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Checkout - CHARGE X</title>
+    <link rel="stylesheet" href="cs/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"></a>
+        <img src="images/logo-image.svg" alt="CHARGEX" class="logo-img" />
+      </div>
+
+      <h1 class="slogan">Ball. Style. Game.</h1>
+
+      <nav class="header-nav">
+        <a href="products.html">Back to shop</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="doughnut-menu">
+          <button
+            class="doughnut-toggle"
+            id="doughnut-toggle"
+            aria-label="Toggle menu"
+          >
+            <span class="doughnut-icon">☰</span>
+          </button>
+          <div class="doughnut-links">
+            <a href="aboutus.html" id="aboutus-link">About Us</a>
+            <a href="login.html" id="login-link">Log In</a>
+            <a href="register.html" id="register-link">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout-main">
+      <section class="checkout-section">
+        <h2>CHECKOUT</h2>
+
+        <div class="order-summary">
+          <h3>Your Order</h3>
+          <div id="order-items"></div>
+          <div class="order-total">
+            <p>Total: <span id="order-total">₵0</span></p>
+          </div>
+        </div>
+
+        <div class="payment-method-tabs">
+          <div class="payment-tab active" data-form="mobile-money-form">
+            Mobile Money
+          </div>
+          <div class="payment-tab" data-form="credit-card-form">
+            Credit/Debit Card
+          </div>
+        </div>
+
+        <form id="mobile-money-form" class="payment-form active">
+          <!-- Mobile Money form fields -->
+          <div class="form-group">
+            <label for="mm-network">Mobile Network</label>
+            <select id="mm-network" class="form-control" required>
+              <option value="">Select Network</option>
+              <option value="mtn">MTN</option>
+              <option value="vodafone">Vodafone</option>
+              <option value="airteltigo">AirtelTigo</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mm-number">Mobile Number</label>
+            <input
+              type="tel"
+              id="mm-number"
+              placeholder="e.g. 0551234567"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mm-name">Account Name</label>
+            <input
+              type="text"
+              id="mm-name"
+              placeholder="Name on mobile money account"
+              required
+            />
+          </div>
+
+          <button type="submit" class="complete-checkout">
+            Complete Payment
+          </button>
+        </form>
+
+        <form id="credit-card-form" class="payment-form">
+          <!-- Credit Card form fields -->
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input
+              type="text"
+              id="card-number"
+              placeholder="1234 5678 9012 3456"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="card-name">Cardholder Name</label>
+            <input
+              type="text"
+              id="card-name"
+              placeholder="Name on card"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="expiry-date">Expiry Date</label>
+              <input
+                type="text"
+                id="expiry-date"
+                placeholder="MM/YY"
+                required
+              />
+            </div>
+
+            <div class="form-group half">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" placeholder="123" required />
+            </div>
+          </div>
+          <button type="submit" class="complete-checkout">
+            Complete Payment
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <h3><a href="aboutus.html">About CHARGE X</a></h3>
+        <p>
+          We provide premium sneakers for athletes and sneaker enthusiasts
+          across Ghana.
+        </p>
+        <p>You can reach us on +233555313037 / +233541929907.</p>
+      </div>
+      <p class="copyright">© 2025 CHARGE X INC. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

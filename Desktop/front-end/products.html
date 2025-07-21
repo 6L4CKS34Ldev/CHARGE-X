@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>CHARGEX - Premium Sneakers</title>
+    <link rel="stylesheet" href="cs/styles.css" />
+</head>
+
+<body>
+    <header> 
+        <div class="logo">
+            <a href="index.html"></a>
+            <img src="images/logo-image.svg" alt="CHARGEX" class="logo-img" />
+        </div>
+
+        <h1 class="slogan">Ball. Style. Game.</h1>
+        <div class="header-right">
+            <div class="doughnut-menu">
+                <button class="doughnut-toggle" id="doughnut-toggle" aria-label="Toggle menu">
+                    <span class="doughnut-icon">☰</span>
+                </button>
+
+                <div class="doughnut-links">
+                    <a href="aboutus.html" id="aboutus-link">About Us</a>
+                    <a href="login.html" id="login-link">Log In</a>
+                    <a href="register.html" id="register-link">Register</a>
+                </div>
+            </div>  
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search sneakers..." />
+            <button>Search</button>
+        </div>
+        
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html" id="home-link">Home</a>
+        <a href="products.html" id="shop-link">Shop</a>
+        <a href="#" id="cart-link">Cart</a>
+    </nav>
+
+    </header>
+
+    <main>
+        <section class="sneakers-section" id="shop-section">
+            <h2>AVAILABLE SNEAKERS</h2>
+            <div class="sneakers">
+                <article class="sneaker">
+                    <a href="ae1-stormtrooper.html">
+                        <img src="images/AE 1 stormtrooper.jpg" alt="AE 1 stormtrooper" />
+                        <h3>AE 1 stormtrooper</h3>
+                        <p class="price">₵899.88</p>
+                        <p class="shipping">Free Shipping</p>
+                    </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+
+                <article class="sneaker">
+                    <a href="anta1-artist.html">
+                        <img src="images/anta kai 1 artist on court.png" alt="Anta kai 1 artist on court" />
+                        <h3>Anta kai 1 artist on court</h3>
+                        <p class="price">₵786.99</p>
+                        <p class="shipping">Free Shipping</p>
+                    </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+
+                <article class="sneaker">
+                    <a href="ja2-nightvision.html">
+                        <img src="images/JA 2 nightvision.png" alt="JA 2 nightvision" />
+                        <h3>JA 2 nightvision</h3>
+                        <p class="price">₵850.77</p>
+                        <p class="shipping">Free Shipping</p>
+                    </a>
+                        <button class="add-to-cart">Add to Cart</button>
+                </article>
+
+                <article class="sneaker">
+                    <a href="anta1-yang.html">
+                        <img src="images/Anta 1 yang.png" alt="Anta kai 1 yang" />
+                        <h3>Anta kai 1 yang</h3>
+                        <p class="price">₵760.67</p>
+                        <p class="shipping">Free Shipping</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </a>               
+                </article>
+
+                <article class="sneaker">
+                    <a href="ja2-halloween.html">
+                        <img src="images/JA 2 Halloween.png" alt="JA 2 halloween" />
+                        <h3>JA 2 halloween</h3>
+                        <p class="price">₵990.54</p>
+                        <p class="shipping">Free Shipping</p>
+                    </a>
+
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+
+                <article class="sneaker">
+                    <a href="kobe8.html">
+                        <img src="images/Nike Kobe 8 Protro White and court  purple.png" alt="Nike Kobe 8 Protro White and court  purple" />
+                        <h3>Kobe 8 Protro White and court purple</h3>
+                        <p class="price">₵876.66</p>
+                        <p class="shipping">Free Shipping</p>
+                    </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+            </div>
+        </section> 
+
+        
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3><a href="aboutus.html">About CHARGE X</a></h3>
+            <p>We provide premium sneakers for athletes and sneaker enthusiasts across Ghana.</p>
+            <p>You can reach us on +233555313037 / +233541929907.</p>
+        </div>
+        <p class="copyright">© 2025 CHARGE X INC. All Rights Reserved.</p>
+    </footer>
+
+<!-- ===== CART SIDEBAR ===== -->
+    <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" id="close-cart" aria-label="Close cart">
+          ×
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be added here dynamically -->
+      </div>
+      <div class="cart-total">
+        <p>Total: <span id="cart-total">₵0</span></p>
+        <button class="checkout-btn">CHECKOUT</button>
+      </div>
+    </aside>
+    <div class="cart-overlay" id="cart-overlay" tabindex="-1"></div>
+    <!-- ===== END CART SIDEBAR ===== -->
+
+
+   
+    <script src="js/scripts.js"></script>
+</body>
+</html>
